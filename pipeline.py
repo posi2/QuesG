@@ -1,3 +1,25 @@
+from textblob import TextBlob
+import nltk
+from textblob import Word
+import warnings
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+import gensim.downloader as api
+warnings.filterwarnings('ignore')
+import re
+from nltk import sent_tokenize
+from nltk.corpus import stopwords
+from rake_nltk import Rake
+import numpy as np
+from gensim.models import Word2Vec
+from scipy import spatial
+import networkx as nx
+from random import shuffle
+
+
 class Pipeline():
     def __init__(self):
        
