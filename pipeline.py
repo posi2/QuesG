@@ -23,7 +23,7 @@ from random import shuffle
 class Pipeline():
     def __init__(self):
        
-      self.w2v_model=w2v_model
+      self.w2v_model= api.load("word2vec-google-news-300")
 
     def text_preprocessing(self,text):
         """
